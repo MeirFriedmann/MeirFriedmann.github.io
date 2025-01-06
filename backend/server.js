@@ -16,7 +16,7 @@ app.get('/image', (req, res) => {
     "Content-Type": "image/webp",
     "Cache-Control": "public, max-age=3600"
   });
-  res.sendFile('/profile.webp');
+  res.sendFile('profile.webp');
 });
 
 app.listen(port, () => {
