@@ -3,7 +3,12 @@ const path = require("path");
 const app = express();
 const port = 5000;
 const cors = require('cors');
-app.use(cors());
+
+const corsOptions = {
+  origin: 'https://meirfriedmann.github.io',
+};
+
+app.use(cors(corsOptions));
 
 app.get('/backend', (req, res) => {
   res.json({ message: 'Hello from Express!' });
