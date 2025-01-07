@@ -13,10 +13,7 @@ hgroup {
 }
 
 body {
-    overflow: hidden;
-
     background-color: #f8f9fa;
-
     margin: 35px;
     text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
