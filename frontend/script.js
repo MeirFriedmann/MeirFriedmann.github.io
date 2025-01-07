@@ -1,7 +1,3 @@
-document.getElementById("myButton").onclick = function() {
-    alert("Hello, World!");
-};
-
 async function loadImage(ipUrl) {
     try {
       const response = await fetch(ipUrl, {
