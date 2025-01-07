@@ -10,12 +10,17 @@
     <meta property="og:description" content="Meir Friedmann's Personal Website">
     <meta property="og:image" content="./frontend/assets/profile.webp">
     <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="">
     <meta http-equiv="Content-Security-Policy" 
     content="
-      default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https: https://143.244.184.83/*;
-      img-src 'self' data: https: http: https://143.244.184.83/*;
-      connect-src 'self' https://143.244.184.83/*;
+      default-src 'self' https:;
+      img-src 'self' https://143.244.184.83;
+      connect-src 'self' https://143.244.184.83;
+      script-src 'self' 'nonce-<random-value>';
+      style-src 'self' 'unsafe-inline';
+      frame-ancestors 'self';
     ">
+    
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=()">
