@@ -10,15 +10,14 @@
     <meta property="og:description" content="Meir Friedmann's Personal Website">
     <meta property="og:image" content="./frontend/assets/profile.webp">
     <meta name="referrer" content="no-referrer">
-    <meta http-equiv="Content-Security-Policy" content="">
     <meta http-equiv="Content-Security-Policy" 
     content="
-      default-src 'self' https:;
-      img-src 'self' https://143.244.184.83;
-      connect-src 'self' https://143.244.184.83;
-      script-src 'self' 'unsafe-inline' https://143.244.184.83;
-      style-src 'self' 'unsafe-inline';
-      frame-ancestors 'self';
+    default-src 'self' https:;
+    img-src 'self' https://143.244.184.83 https: blob;
+    connect-src 'self' https://143.244.184.83;
+    script-src 'self' https://143.244.184.83;
+    style-src 'self';
+    frame-ancestors 'self';
     ">
     
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -29,26 +28,13 @@
     <title>Meir Friedmann's Personal Website</title>
     <link rel="stylesheet" href="frontend/styles.css">
     <!-- Matomo -->
-    <script>
-        var _paq = window._paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-        var u="https://meirfriedmann.matomo.cloud/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src='https://cdn.matomo.cloud/meirfriedmann.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
+    <script src="matomo.js"></script>
     <!-- End Matomo Code -->
 </head>
 <body>
     <h1>Hello, World!</h1>
     <img id="myImage" src="frontend/assets/ascii-art.png" alt="my profile picture" width="300" height="300">
     <button id="myButton">Click Me</button>
-
     <script src="frontend/script.js"></script>
 </body>
 </html>
