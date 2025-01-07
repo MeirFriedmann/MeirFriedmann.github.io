@@ -27,7 +27,7 @@ h2 {
 } */
 
 .img-div {
-    width: min(100%, 1200px);
+    width: min(100%, 700px);
     margin-inline: auto;
     padding: 1rem;
   }
@@ -37,11 +37,11 @@ h2 {
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: 8px; /* optional: rounded corners */
+    border-radius: 8px;
   }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 20px;
   }
