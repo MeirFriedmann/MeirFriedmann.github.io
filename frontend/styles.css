@@ -11,6 +11,9 @@ hgroup {
   margin: 0.1rem 0;
 }
 body {
+    max-height: 100vh;
+    overflow: hidden;
+  
     background-color: #f8f9fa;
 
   margin: 35px;
@@ -68,6 +71,11 @@ h2 {
     border-radius: 50%;
 }
 
-section {
-    margin: 20px 0;
+section.education {
+    padding: 1px 0;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
 }
