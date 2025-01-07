@@ -15,5 +15,5 @@ async function loadImage(ipUrl) {
     }
   }
 
-  const ipUrl = 'https://143.244.184.83/image';
+  const ipUrl = 'https://psychowords.com/image';
   loadImage(ipUrl);
