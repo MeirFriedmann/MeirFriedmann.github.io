@@ -1,0 +1,9 @@
+---
+# This file specifies the HTTP headers for your Jekyll site.
+
+# Set the Content-Security-Policy header
+Content-Security-Policy: default-src 'self' https:; img-src 'self' https://143.244.184.83 https: blob:; connect-src 'self' https://143.244.184.83; script-src 'self' https://143.244.184.83; style-src 'self'; frame-ancestors 'none';
+
+# Set the X-Frame-Options header
+X-Frame-Options: DENY
+---
