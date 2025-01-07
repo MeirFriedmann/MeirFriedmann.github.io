@@ -17,11 +17,9 @@
     connect-src 'self' https://143.244.184.83;
     script-src 'self' https://143.244.184.83;
     style-src 'self';
-    frame-ancestors 'self';
     ">
     
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=()">
     <link rel="icon" href="frontend/assets/favicon.ico" type="image/x-icon">
 
@@ -33,7 +31,7 @@
 </head>
 <body>
     <h1>Hello, World!</h1>
-    <img id="myImage" src="frontend/assets/ascii-art.png" alt="my profile picture" width="300" height="300">
+    <img id="myImage" src="frontend/assets/ascii-art.png" alt="my profile picture" loading="lazy" decoding="async" width="300" height="300">
     <button id="myButton">Click Me</button>
     <script src="frontend/script.js"></script>
 </body>
