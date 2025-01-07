@@ -9,4 +9,4 @@ echo "Process $PID has been terminated."
 fi
 rm -rf ./MeirFriedmann.github.io/
 git clone https://github.com/meirfriedmann/MeirFriedmann.github.io.git
-node ./MeirFriedmann.github.io/backend/server.js
+node ./MeirFriedmann.github.io/backend/server.js >> ./server.log 2>&1 &
