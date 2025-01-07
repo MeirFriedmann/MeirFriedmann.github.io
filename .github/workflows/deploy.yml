@@ -10,24 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3  # Check out the repository code
 
-    - name: Deploy to remote server
-      uses: appleboy/ssh-action@v0.1.8
-      with:
-        host: ${{ secrets.SERVER_HOST }} # Your server's IP or domain
-        username: ${{ secrets.SERVER_USER }} # SSH username
-        key: ${{ secrets.SERVER_PRIVATE_KEY }} # Private SSH key
-        script: |
-          PID=$(lsof -t -i :$5000)
-          if [ -z "$PID" ]; then
-            echo "No process found running on port"
-          else
-            echo "Killing process $PID running on port..."
-            kill -9 $PID
-            echo "Process $PID has been terminated."
-          fi
-          rm -rf ./MeirFriedmann.github.io/
-          git clone https://github.com/meirfriedmann/MeirFriedmann.github.io.git
-          node ./MeirFriedmann.github.io/backend/server.js
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519  # Add private key to the runner
+          chmod 600 ~/.ssh/id_ed25519  # Set correct permissions for private key
+          ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts  # Add your server to known hosts
+
+      - name: Copy deploy script to remote server
+        run: |
+          scp deploy.sh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/tmp/deploy.sh 
+  
+      - name: Execute on remote Server
+        run: |
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "bash /tmp/deploy.sh"
