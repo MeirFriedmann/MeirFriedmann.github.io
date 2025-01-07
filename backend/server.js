@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require("path");
+const helmet = require('helmet');
 const app = express();
 const port = 5000;
 const cors = require('cors');
@@ -9,6 +10,8 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+
+app.use(helmet());
 
 app.get('/backend', (req, res) => {
   res.json({ message: 'Hello from Express!' });
