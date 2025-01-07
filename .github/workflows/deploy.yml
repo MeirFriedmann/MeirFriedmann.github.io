@@ -15,12 +15,12 @@ jobs:
       - name: Set up SSH agent
         uses: webfactory/ssh-agent@v0.5.3
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.SERVER_PRIVATE_KEY }}
 
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519  # Add private key to the runner
+          echo "${{ secrets.SERVER_PRIVATE_KEY }}" > ~/.ssh/id_ed25519  # Add private key to the runner
           chmod 600 ~/.ssh/id_ed25519  # Set correct permissions for private key
           ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts  # Add your server to known hosts
 
