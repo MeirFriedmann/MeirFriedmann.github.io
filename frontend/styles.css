@@ -21,3 +21,21 @@ h2 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* img {
+  object-fit: cover;
+} */
+
+.img-div {
+    width: min(100%, 1200px);
+    margin-inline: auto;
+    padding: 1rem;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px; /* optional: rounded corners */
+  }
