@@ -19,7 +19,6 @@ jobs:
         host: ${{ secrets.SERVER_HOST }} # Your server's IP or domain
         username: ${{ secrets.SERVER_USER }} # SSH username
         key: ${{ secrets.SERVER_PRIVATE_KEY }} # Private SSH key
-        port: 22 # SSH port (default: 22)
         script: |
           PID=$(lsof -t -i :$5000)
           if [ -z "$PID" ]; then
