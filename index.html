@@ -27,8 +27,15 @@
     <meta property="og:description" content="Meir Friedmann's Personal Website">
     <meta property="og:image" content="./frontend/assets/profile.webp">
     <meta name="referrer" content="no-referrer">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="Content-Security-Policy" 
+        content="
+        default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https: https://143.244.184.83;
+        img-src 'self' data: https: http: https://143.244.184.83;
+        connect-src 'self' https://143.244.184.83:*;
+        ">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=()">
     <link rel="icon" href="frontend/assets/favicon.ico" type="image/x-icon">
 
     <title>Meir Friedmann's Personal Website</title>
