@@ -28,8 +28,6 @@ h2 {
 
 .img-div {
     width: min(100%, 700px);
-    margin-inline: auto;
-    padding: 1rem;
   }
   
   img {
@@ -43,4 +41,16 @@ h2 {
 .container {
     max-width: 1200px;
     padding: 20px;
+  }
+
+  .responsive-text {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* Allow breaking at narrower screen sizes */
+  @media (max-width: 500px) {
+    .responsive-text {
+      white-space: normal; /* Enable line wrapping */
+    }
   }
