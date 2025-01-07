@@ -54,3 +54,13 @@ h2 {
       white-space: normal; 
     }
   }
+
+.social {
+    display: flex; justify-content: center; gap: 15px; padding-top: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
