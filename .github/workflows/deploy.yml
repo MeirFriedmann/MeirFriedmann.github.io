@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3  # Check out the repository code
+      - name: Set up SSH agent
+        run: eval $(ssh-agent)
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_PRIVATE_KEY }}
 
       - name: Set up SSH
         run: |
