@@ -13,4 +13,4 @@ async function loadImage(ipUrl) {
   }
 
   const ipUrl = 'https://psychowords.com/image';
-  document.getElementById('changeImage').addEventListener('click', loadImage(ipUrl));
+  document.getElementById('changeImage').addEventListener('click', ()=>loadImage(ipUrl));
