@@ -24,7 +24,6 @@ h2 {
 
 .img-div {
     width: min(100%, 650px);
-    flex: auto;
     justify-content: center;
 }
 
@@ -64,7 +63,7 @@ img {
     border-radius: 50%;
 }
 
-section.education {
+section.experience {
     padding: 1px 0;
     white-space: nowrap;
 }
