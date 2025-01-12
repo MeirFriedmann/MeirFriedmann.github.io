@@ -13,6 +13,20 @@ app.use(cors(corsOptions));
 
 app.use(helmet());
 
+// Set to effectively never timeout
+app.keepAliveTimeout = 0;        // 0 means no timeout
+app.headersTimeout = 0;          // 0 means no timeout
+app.timeout = 0;                 // 0 means no timeout
+
+// Add error handling to prevent crashes
+process.on('uncaughtException', (err) => {
+    console.error('Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
 app.get('/backend', (req, res) => {
   res.json({ message: 'Hello from Express!' });
 });
