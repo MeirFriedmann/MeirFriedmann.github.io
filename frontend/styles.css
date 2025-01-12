@@ -51,10 +51,10 @@ img {
 }
 
 .social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    position:fixed;
     padding-top: 20px;
+    bottom: 1rem;
+    left : 40%;
 }
 
 .icon {
@@ -65,7 +65,6 @@ img {
 
 section.experience {
     padding: 1px 0;
-    white-space: nowrap;
 }
 
 button {
