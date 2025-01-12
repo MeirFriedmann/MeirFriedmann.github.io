@@ -6,7 +6,7 @@ async function loadImage(ipUrl) {
       const blob = await response.blob();
       const imgUrl = URL.createObjectURL(blob);
       document.querySelector('img').src = imgUrl;
-      document.querySelector('button').style.display = 'none';
+      document.querySelector('button').style.visibility = 'hidden';
     } catch (error) {
       console.error('Image loading failed:', error);
     }
