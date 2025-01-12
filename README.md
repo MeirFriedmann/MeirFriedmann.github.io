@@ -1,6 +1,6 @@
 # Personal Website Project
 
-This project started as a response to a challenge posted by [@taltimes2](https://x.com/taltimes2). Over the course of about 24 hours, I built a simple website that gave me the opportunity to integrate various aspects of web development and deployment into a single cohesive project.  
+This project started as a response to a challenge posted by [@taltimes2](https://x.com/taltimes2/status/1875879963393413514). Over the course of about 24 hours, I built a simple website that gave me the opportunity to integrate various aspects of web development and deployment into a single cohesive project.  
 
 ---
 
