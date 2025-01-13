@@ -26,7 +26,6 @@ h2 {
 .img-div {
     width: min(100%, 650px);
     justify-content: center;
-    visibility: hidden;
 }
 
 img {
@@ -108,7 +107,7 @@ pre {
     letter-spacing: unset;
     transform: unset;
     overflow-y: hidden;
-    cursor: pointer;
+    cursor: default; 
 }
 
 .text-center {

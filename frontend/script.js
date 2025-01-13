@@ -7,7 +7,6 @@ async function loadImage(ipUrl) {
       const imgUrl = URL.createObjectURL(blob);
       document.querySelector('img').src = imgUrl;
       document.querySelector('img').style.visibility = 'visible';
-      document.getElementById('img-div').style.visibility = 'visible';
       document.getElementById('text-center').style.visibility = 'hidden';
       document.querySelector('pre').style.visibility = 'hidden';
       document.querySelector('button').style.visibility = 'hidden';
