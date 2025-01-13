@@ -32,10 +32,10 @@ img {
     /* width: 95%; */
     width: 481.641px;
     height: auto;
-    visibility: hidden;
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 8px;
+    display: hidden;
 }
 
 .container {
