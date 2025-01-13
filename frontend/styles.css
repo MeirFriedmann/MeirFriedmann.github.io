@@ -98,7 +98,6 @@ pre {
     margin-top: 0;
     margin-bottom: 1rem;
     overflow: auto;
-    display: inline-block;
     color: #000000;
     white-space: pre;
     font-family: monospace;
