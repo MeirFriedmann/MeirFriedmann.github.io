@@ -34,7 +34,7 @@ img {
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 #myImage {
@@ -42,6 +42,8 @@ img {
 }
 
 .container {
+    margin-right: 20px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     /* max-width: 1200px; */
