@@ -7,7 +7,6 @@ async function loadImage(ipUrl) {
       const imgUrl = URL.createObjectURL(blob);
       document.querySelector('img').src = imgUrl;
       document.querySelector('img').style.display = 'block';
-      document.getElementById('text-center').style.display = 'none';
       document.querySelector('pre').style.display = 'none';
       document.querySelector('button').style.visibility = 'hidden';
     } catch (error) {
