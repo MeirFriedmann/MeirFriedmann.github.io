@@ -35,6 +35,9 @@ img {
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 8px;
+}
+
+#myImage {
     display: none;
 }
 
@@ -96,7 +99,7 @@ pre {
     text-align: left!important;
     box-sizing: border-box;
     margin-top: 0;
-    overflow: auto;
+    /* overflow: auto; */
     color: #000000;
     white-space: pre;
     font-family: monospace;
@@ -104,7 +107,7 @@ pre {
     line-height: 8px;
     letter-spacing: unset;
     transform: unset;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     cursor: default; 
 }
 
