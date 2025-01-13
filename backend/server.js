@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const corsOptions = {
   origin: 'https://meirfriedmann.github.io',
-  origin : 'https://meirfriedmann.com',
+  origin : 'https://www.meirfriedmann.com',
 };
 
 app.use(cors(corsOptions));
