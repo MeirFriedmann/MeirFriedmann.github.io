@@ -96,7 +96,6 @@ pre {
     text-align: left!important;
     box-sizing: border-box;
     margin-top: 0;
-    margin-bottom: 1rem;
     overflow: auto;
     color: #000000;
     white-space: pre;
@@ -109,7 +108,7 @@ pre {
     cursor: default; 
 }
 
-.text-center {
+/* .text-center {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     
@@ -126,6 +125,6 @@ pre {
     line-height: 1.5;
     color: #000000;
     box-sizing: border-box;
-    margin-top: 1rem!important;
     text-align: center!important;
 }
+    */
