@@ -35,7 +35,7 @@ img {
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 8px;
-    display: hidden;
+    display: none;
 }
 
 .container {
